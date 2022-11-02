@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".ChatPersonal">
+    <ImageView
+        android:id="@+id/chat_personal_pict"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/man"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juned"
+        app:layout_constraintTop_toTopOf="@id/chat_personal_pict"
+        app:layout_constraintStart_toEndOf="@id/chat_personal_pict"
+        android:textSize="30dp"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:id="@+id/chat_personal_chat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chat_personal_pict"
+        app:layout_constraintStart_toStartOf="@id/chat_personal_pict"
+        android:text="Lagi dimana bro?"
+        android:textSize="20dp"
+        android:background="@color/white"
+        android:textColor="@color/pink"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/chat_personal_chat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chat_personal_chat1"
+        app:layout_constraintStart_toEndOf="@id/chat_personal_chat1"
+        android:text="dikamar, gabut"
+        android:textSize="20dp"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/chat_personal_chat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chat_personal_chat2"
+        app:layout_constraintStart_toStartOf="@id/chat_personal_pict"
+        android:text="Bro nongkrong yuk"
+        android:textSize="20dp"
+        android:background="@color/white"
+        android:textColor="@color/pink"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:hint="Tulis sesuatu"
+        android:textSize="20dp"
+        android:textColorHint="@color/cardview_dark_background"
+        android:textColor="@color/pink"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/chat_personal_pict"
+        android:layout_marginBottom="30dp"/>
+    <ImageButton
+        android:id="@+id/chat_personal_send"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

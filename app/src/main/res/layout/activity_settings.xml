@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:id="@+id/gambar_settings"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/man"
+        app:layout_constraintTop_toBottomOf="@+id/settings"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jamet"
+        app:layout_constraintStart_toEndOf="@id/gambar_settings"
+        app:layout_constraintTop_toTopOf="@+id/gambar_settings"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/user_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jamet@mhs.unsoed.ac.id"
+        app:layout_constraintTop_toBottomOf="@id/gambar_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="passwordjamet123"
+        app:layout_constraintTop_toBottomOf="@id/user_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ganti Password"
+        android:background="@color/pink"
+        app:layout_constraintTop_toBottomOf="@id/password_input"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
